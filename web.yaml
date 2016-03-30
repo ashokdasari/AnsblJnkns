@@ -1,0 +1,14 @@
+---
+- hosts: webservers
+  sudo: yes       
+  tasks:
+  - name: Ensure Apache installed
+    yum: name=httpd state=present
+
+  - name: start Apache services
+    service: name=httpd enabled=yes state=started
+
+  - name: Copy site files
+    template: src=templates/index.j2 dest=/var/www/html/index.html
+
+

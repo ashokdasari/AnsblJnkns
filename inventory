@@ -7,6 +7,6 @@ web1
 webservers
 
 [datacenter:vars]
-ansible_ssh_user=ggk
-ansible_ssh_pass=Welcome@1234
-ansible_sudo_pass=Welcome@1234
+ansible_ssh_user=***
+ansible_ssh_pass=*********
+ansible_sudo_pass=********
